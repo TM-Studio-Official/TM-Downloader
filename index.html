@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TM Downloader - Free Download | Develop by TM Studio</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; text-align: center; }
+  header { background: #0b6b5e; color: #fff; padding: 40px 20px; }
+  header h1 { margin: 0; font-size: 36px; }
+  header p { margin: 8px 0 0; color: #cfe8e2; }
+  .btn { display: inline-block; margin: 30px 0 10px; padding: 16px 36px; background: #0b6b5e; color: #fff; text-decoration: none; font-size: 20px; border-radius: 8px; }
+  .btn:hover { background: #09584d; }
+  .box { max-width: 700px; margin: 20px auto; background: #fff; padding: 24px; border-radius: 10px; text-align: left; }
+  .box h2 { color: #0b6b5e; }
+  code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+  footer { color: #777; padding: 20px; font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>TM Downloader</h1>
+  <p>Develop by TM Studio &mdash; Free download for Windows</p>
+</header>
+
+<!-- DOWNLOAD BUTTON: GitHub repo banane ke baad OWNER aur REPO ki jagah
+     apna GitHub username aur repo ka naam likh do. Release me file ka
+     naam TM-Downloader.exe hona chahiye, tab ye link hamesha latest
+     version dega: -->
+<a class="btn" href="https://github.com/TM-Studio-Official/TM-Downloader/releases/latest/download/TM-Downloader-Setup.exe">⬇ Download TM Downloader (.exe)</a>
+<p>Windows 10 / 11 &middot; Free &middot; No Python needed to run it</p>
+
+<div class="box">
+  <h2>Features</h2>
+  <ul>
+    <li>Segmented downloads with Pause / Resume</li>
+    <li>YouTube and other video sites (via yt-dlp)</li>
+    <li>Magnet links and .torrent files (libtorrent is built into the .exe)</li>
+    <li>Download File Info popup, progress popup, categories and queue</li>
+    <li>Minimize to Tray</li>
+  </ul>
+</div>
+
+<div class="box">
+  <h2>Kuch alag install karne ki zaroorat nahi</h2>
+  <p>.exe chalane ke liye Python ki zaroorat <b>nahi</b> hai, aur na hi yt-dlp ya ffmpeg alag se download karna hai &mdash; <b>ye sab .exe ke andar hi bundled hain</b>. Bas .exe download karo, chalao, aur download shuru karo.</p>
+  <p>Sirf aik cheez alag hai: Chrome extension (YouTube par Download button ke liye) &mdash; ye alag se milegi, .exe ke sath bundle nahi hai. Torrent ke liye bhi kuch alag nahi chahiye &mdash; libtorrent .exe me hi hai. Torrent ki speed seeders/peers par depend karti hai.</p>
+  <p><b>Note:</b> .exe ka size ~100 MB ke qareeb hoga, kyunke yt-dlp + ffmpeg andar hi hain. Ye aik dafa ka download hai.</p>
+</div>
+
+<div class="box">
+  <h2>✅ Tray me ho to main window kholne ki zaroorat nahi (IDM jesa)</h2>
+  <p>TM Downloader ko har download par kholna nahi parta: X dabane par ye tray me chala jata hai, aur Windows start par khud tray me aa jata hai. Tray me ho to YouTube par button dabate hi <b>Download File Info popup khud khul jayega</b> (Start / Download Later / Cancel), main window khole baghair. Poori tarah band app (File &gt; Exit ya tray &gt; Quit) se koi downloader download nahi kar sakta, IDM bhi nahi &mdash; is liye app ko tray me hi rehne do.</p>
+</div>
+
+<div class="box">
+  <h2>🛠 Installation (IDM jesi)</h2>
+  <p>Setup.exe chalao, phir ye steps aayenge: (1) <b>Installation ki jaga</b> chuno (Browse se change kar sakte ho), (2) <b>Start Menu folder</b> chuno ya "Don't create a Start Menu folder" tick karke Start Menu shortcut mat banao, (3) <b>Desktop par shortcut</b> chahiye to checkbox tick rakho, nahi chahiye to untick karo, (4) <b>Install</b> dabao. Kisi bhi waqt <b>Cancel</b> dabane par installation ruk jayegi aur copy hui files wapas hat jayengi. Install ke baad app khud chalegi, aur uninstall Control Panel / Start Menu se ho jayega.</p>
+</div>
+
+<div class="box">
+  <h2>⚠️ Extension alag se install karni hogi (zaroori note)</h2>
+  <p>Chrome khud TM ki extension apne aap nahi uthata (ye Chrome ki security hai, IDM ki extension Store par hone ki wajah se auto-install hoti hai). Is liye extension <b>alag se, aik dafa</b> install karni hogi:</p>
+  <ol>
+    <li>TM Downloader .exe ko aik dafa chalao &mdash; ye extension folder bana dega: <code>%LOCALAPPDATA%\TM Downloader\extension</code></li>
+    <li>Chrome me <code>chrome://extensions</code> kholo, upar right me <b>Developer mode ON</b> karo</li>
+    <li><b>Load unpacked</b> dabao aur upar wala folder select karo</li>
+    <li>Us ke baad extension har waqt lagi rahegi.</li>
+  </ol>
+  <p><b>App band ho to button kaam nahi karega:</b> TM Downloader app khuli hui honi chahiye (tray me bhi chal sakti hai). Is ke liye app me <b>Options &gt; Windows start hote hi TM Downloader tray me chalao</b> tick karo &mdash; phir Windows start hote hi app tray me chalegi aur extension hamesha app ko paa legi. Button dabane ke baad agar app band ho to naya version 60 second tak khud retry karta hai, app kholte hi download queue me chala jayega.</p>
+</div>
+
+<div class="box">
+  <h2>Note</h2>
+  <p>TM Downloader TM Studio ka apna original program hai. Is ka source code public nahi hai &mdash; sirf .exe free download ke liye di jati hai. Sirf apni ya ijazat wali files/videos download karein.</p>
+</div>
+
+<footer>Develop by TM Studio</footer>
+</body>
+</html>
